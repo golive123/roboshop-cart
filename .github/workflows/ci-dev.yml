@@ -5,6 +5,6 @@ on:
       - 'ROBO-**'
 jobs:
   Build:
-    uses: udayach123/roboshop-github-actions/.github/workflows/ci-reuse.yml@main
+    uses: udayach123/roboshop-github-actions/.github/workflows/ci-main.yml@main
 ####
 
