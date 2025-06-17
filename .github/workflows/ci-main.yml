@@ -10,10 +10,9 @@ jobs:
     with:
       appType: 'nodeJs'
   Test:
-    runs-on: ubuntu-latest
-    needs: Build
-    steps:
-      - run: echo OK
+    uses: udayach123/roboshop-github-actions/.github/workflows/ci-test.yml@main
+    with:
+      appType: 'nodeJs'
   Dev_deploy:
     runs-on: ubuntu-latest
     needs: Test
