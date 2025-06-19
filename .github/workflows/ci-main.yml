@@ -9,3 +9,6 @@ jobs:
     uses: udayach123/roboshop-github-actions/.github/workflows/ci-main.yml@main
     with:
       appType: 'nodeJs'
+      appName: 'cart'
+    secrets:
+       azuresecrets: ${{ secrets.azuresecrets }}
